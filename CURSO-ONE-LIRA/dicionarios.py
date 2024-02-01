@@ -1,4 +1,4 @@
-produtos = {"iphone": 90500, "ipad": 40000, "celular": 59980} # Criação da tupla
+produtos = {"iphone": 90500, "ipad": 40000, "celular": 59980} # Criação de Dicionário
 
 produto_consultado = input('Digite o nome do produto: ')
 produto_consultado = produto_consultado.lower() # Converter para minúsculo
