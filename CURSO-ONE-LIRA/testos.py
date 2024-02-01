@@ -60,8 +60,22 @@ email_novo = 'vissoca@gmail.com'
 
 # Descubra o servidor do email
 
+posicao2 = email_novo.find('@')
+servidor2 = email_novo[posicao2:]
+print(f'Novo servidor 2: {servidor2}')
+
 # Pegar o primeiro nome do usuário
+posicaoN = nome2.find(' ')
+primeiro_nome = nome2[:posicaoN]
+
+print(f'Primeiro nome: {primeiro_nome}')
 
 # Construa uma mensagem 'usuário nome cadastrdo com sucesso com o email vissoca@...' 
+mensagem = f'Usuário {nome2} cadastrado com sucesso com email {email_novo}'
+print(mensagem)
 
 # Enviamos um link de confirmação para email v***@gmail.com
+email_barrado = email_novo[0]+ '***' +  email_novo[posicao2:]
+mensage2 = f'Enviamos um link de confirmação para {email_barrado}' 
+print(mensage2)
+
